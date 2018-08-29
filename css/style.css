@@ -1,0 +1,176 @@
+.boxtesting {
+  background-image: url('/theme/images/QuizzingInc.png');
+  height: 36px;
+  background-size: cover ;
+  background-position: center;
+}
+.new-icon {
+  background: url('/theme/images/logo-coloured.jpg');
+  width: 172px;
+  height: 182px;
+  background-size: cover ;
+  background-position: center;
+}
+.terms-heading h1 {
+  padding-top: 7px;
+  margin-top: 0px;
+  color: #666666;
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: .67em 0;
+}
+.terms-para {
+  color: #4f4e4e;
+  font: 16px proxima;
+  line-height: 25px;
+  margin: 0 0 10px;
+}
+table,
+th,
+td {
+  border: 1px solid;
+  border-color: 4f4e4e ;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.tab-list {
+  list-style: none;
+  padding-left: 0px;
+}
+.tab-list li a {
+  background: transparent;
+  border-radius: 0;
+  font-weight: 400;
+  color: #777777;
+  padding: 10px 0;
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #d0d2d3;
+}
+.left-bg {
+  position: fixed;
+  min-height: 500px;
+}
+.no-padding {
+  padding: 0;
+}
+.left-col {
+  padding-left: 10px;
+}
+.tab-list li {
+  display: block;
+  padding-right: 20px;
+}
+.content-wrapper-privacy .contact-head {
+  background-color: #ffffff;
+  height: 130px;
+}
+.content-wrapper-privacy .contact-head .main-head {
+  text-align: left;
+  padding: 50px;
+  font-size: 25px;
+  color: #252f3f;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+.content-wrapper-privacy .privacy-sub {
+  background-color: #ecedee;
+  padding: 40px 200px 40px 40px;
+}
+.content-wrapper-privacy .privacy-sub .navbar-bright {
+  background-color: #111155;
+  color: #fff;
+}
+.content-wrapper-privacy .privacy-sub .affix-top,
+.content-wrapper-privacy .privacy-sub .affix {
+  position: static;
+}
+.content-wrapper-privacy .privacy-sub #sidebar.affix-top {
+  position: static;
+  margin-top: 30px;
+  width: 300px;
+}
+.content-wrapper-privacy .privacy-sub #sidebar.affix {
+  position: fixed;
+  top: 50px;
+  width: 300px;
+}
+.content-wrapper-privacy .privacy-inner {
+  background-color: #f7f7f7;
+}
+.content-wrapper-privacy .sdbr {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: #676767;
+}
+.content-wrapper-privacy #leftCol ul li {
+  border-bottom: 1px solid #676767;
+}
+.content-wrapper-privacy .privacy-content h2 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: #5670b2;
+}
+.content-wrapper-privacy .privacy-content p {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: #676767;
+}
+/*
+A Bootstrap 3.1 affix sidebar template
+from http://bootply.com
+
+This CSS code should follow the 'bootstrap.css'
+in your HTML file.
+
+license: MIT
+author: bootply.com
+*/
+#masthead {
+  min-height: 250px;
+}
+#masthead h1 {
+  font-size: 30px;
+  line-height: 1;
+  padding-top: 20px;
+}
+#masthead .well {
+  margin-top: 8%;
+}
+@media screen and (min-width: 768px) {
+  #masthead h1 {
+    font-size: 50px;
+  }
+}
+.navbar-bright {
+  background-color: #111155;
+  color: #fff;
+}
+.affix-top,
+.affix {
+  position: static;
+}
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top: 30px;
+    width: 228px;
+  }
+  #sidebar.affix {
+    position: fixed;
+    top: 70px;
+    width: 228px;
+  }
+}
+#sidebar li.active {
+  border: 0 #eee solid;
+  border-right-width: 5px;
+}
