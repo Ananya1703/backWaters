@@ -1,0 +1,894 @@
+
+@font-face {
+    font-family: "backwaters";
+    src:url("/theme/fonts/backwaters.eot");
+    src:url("/theme/fonts/backwaters.eot?#iefix") format("embedded-opentype"),
+    url("/theme/fonts/backwaters.woff") format("woff"),
+    url("/theme/fonts/backwaters.ttf") format("truetype"),
+    url("/theme/fonts/backwaters.svg#backwaters") format("svg");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+[data-icon]:before {
+    font-family: "backwaters" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "backwaters" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fb-solid:before {
+    content: "b";
+}
+.icon-tw-solid:before {
+    content: "c";
+}
+.icon-arrow-1-left:before {
+    content: "d";
+}
+.icon-arrow-1-right:before {
+    content: "e";
+}
+.icon-twitter:before {
+    content: "f";
+}
+.icon-plus:before {
+    content: "g";
+}
+.icon-download:before {
+    content: "h";
+}
+.icon-fb:before {
+    content: "a";
+}
+
+.f-12 {
+    font-size: 12px
+}
+
+.f-14 {
+    font-size: 14px
+}
+
+.f-16 {
+    font-size: 16px
+}
+
+.f-18 {
+    font-size: 18px
+}
+
+.f-20 {
+    font-size: 20px
+}
+
+.f-21 {
+    font-size: 21px
+}
+
+.f-24 {
+    font-size: 24px
+}
+
+.f-34 {
+    font-size: 34px
+}
+
+.mt-20 {
+    margin-top: 20px
+}
+
+.mt-40 {
+    margin-top: 40px
+}
+
+.mt-60 {
+    margin-top: 60px
+}
+
+.mt-80 {
+    margin-top: 80px
+}
+
+.mb-20 {
+    margin-bottom: 20px
+}
+
+.mb-40 {
+    margin-bottom: 40px
+}
+
+.mb-60 {
+    margin-bottom: 60px
+}
+
+.mb-80 {
+    margin-bottom: 80px
+}
+
+.no-padding {
+    padding: 0 !important
+}
+
+.m-0 {
+    margin: 0 !important
+}
+
+.big-text {
+    font-size: 4.236em
+}
+
+.proxima {
+    font-family: 'proxima'
+}
+
+.bold {
+    font-weight: normal
+}
+
+.center {
+    margin: 0 auto
+}
+
+.purple {
+    color: #785dca
+}
+
+.text-dark {
+    color: #414042
+}
+
+.white {
+    color: #ffffff
+}
+
+.grey {
+    color: #eee
+}
+
+.bg-grey {
+    background-color: #eee
+}
+
+.shadow {
+    -webkit-box-shadow: 0 0 20px 0 #ccc !important;
+    -moz-box-shadow: 0 0 20px 0 #ccc !important;
+    box-shadow: 0 0 20px 0 #ccc !important
+}
+
+@font-face {
+    font-family: 'proxima';
+    src: url('../fonts/fontsMark Simonson - Proxima Nova Thin-webfont.eot');
+    src: url('../fonts/Mark Simonson - Proxima Nova Thin-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Mark Simonson - Proxima Nova Thin-webfont.woff2') format('woff2'), url('../fonts/Mark Simonson - Proxima Nova Thin-webfont.woff') format('woff'), url('../fonts/Mark Simonson - Proxima Nova Thin-webfont.ttf') format('truetype'), url('../fonts/Mark Simonson - Proxima Nova Thin-webfont.svg#proxima_nova_ltthin') format('svg');
+    font-weight: thin;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Proxima';
+    src: url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot');
+    src: url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff') format('woff'), url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf') format('truetype'), url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'proxima';
+    src: url('../fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.eot');
+    src: url('../fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.woff2') format('woff2'), url('../fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.woff') format('woff'), url('../fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.ttf') format('truetype'), url('../fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.svg#proxima_nova_altbold') format('svg');
+    font-weight: bold;
+    font-style: normal
+}
+
+#header {
+    background-color: #000;
+    min-height: 70px
+}
+
+#header .events .menu {
+    border-top: 2px solid #785dca;
+    visibility: hidden;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 220px;
+    opacity: 0;
+    transition: all .3s ease-in;
+    display: block;
+    height: auto
+}
+
+#header .events .menu > ul {
+    padding: 10px
+}
+
+#header .events .menu > ul li {
+    padding: 5px
+}
+
+#header .events .menu > ul li:hover > .sub-menu {
+    opacity: 1;
+    visibility: visible
+}
+
+#header .events .menu > ul li a {
+    display: block;
+    font-family: 'proxima';
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0
+}
+
+#header .events .menu > ul li a:hover {
+    color: #785dca
+}
+
+#header .events .menu > ul li > .sub-menu {
+    transition: all .3s ease-in;
+    opacity: 0;
+    visibility: hidden;
+    border-left: 2px solid #785dca;
+    position: absolute;
+    left: 220px;
+    top: -2px;
+    width: 200px;
+    float: left;
+    background-color: #000
+}
+
+#header .events .menu > ul li > .sub-menu ul {
+    padding: 10px
+}
+
+#header .events .menu > ul li > .sub-menu ul li {
+    padding: 5px
+}
+
+#header .events .menu > ul li > .sub-menu ul li a {
+    display: block;
+    font-family: 'proxima';
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none
+}
+
+#header .events .menu > ul li > .sub-menu ul li a:hover {
+    color: #785dca
+}
+
+#header .events:hover .menu {
+    visibility: visible;
+    opacity: 1
+}
+
+.navbar-mobile.navbar-toggle {
+    margin-top: 18px
+}
+
+.navbar-mobile.navbar-toggle .icon-bar {
+    background-color: #ffffff
+}
+
+.navbar-nav {
+    padding-top: 10px
+}
+
+.navbar-nav > li > a {
+    font-family: 'proxima';
+    color: #ffffff;
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    transition: all .3s ease;
+    text-transform: uppercase
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-nav > li > a {
+        padding: 10px !important;
+        font-size: 12px !important
+    }
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    background-color: transparent !important;
+    color: #785dca;
+    outline: 0
+}
+
+a.navbar-brand {
+    padding: 5px 15px
+}
+
+a.navbar-brand img {
+    width: 140px
+}
+
+.footer-bg {
+    background-color: #333
+}
+
+.wrap-1 .white {
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.wrap-1 img {
+    width: 80%
+}
+
+.wrap-2 ul li {
+    font-size: 18px;
+    color: #eee;
+    font-weight: 600;
+    margin-bottom: 5px
+}
+
+.wrap-2 ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #eee;
+    margin: 0
+}
+
+.wrap-3 ul li {
+    width: 25%;
+    padding: 1px
+}
+
+.wrap-3 ul li a {
+    margin: 0
+}
+
+.wrap-4 ul.contact {
+    padding-left: 0
+}
+
+.wrap-4 ul.contact li {
+    margin-bottom: 5px
+}
+
+.wrap-4 ul.contact li span {
+    font-size: 16px
+}
+
+.wrap-4 ul.contact li span i {
+    margin-right: 10px
+}
+
+.wrap-4 ul.social li a i {
+    color: #eee
+}
+
+.footer-btm {
+    background-color: #000
+}
+
+.btm-txt {
+    display: block;
+    padding: 10px 0
+}
+
+.bc {
+    color: #eee
+}
+
+.bc:hover {
+    color: #ffffff
+}
+
+.social li a {
+    margin: 0
+}
+
+.social li a i {
+    font-size: 16px
+}
+
+#home-carousel{
+    margin-top: 50px;
+}
+#home-carousel .item {
+    background-position: center;
+    background-size: cover;
+    height: 667px
+}
+
+.pre-loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url('../images/loading.gif') no-repeat center center;
+}
+
+@media (max-width: 767px) {
+    #home-carousel .item {
+        height: 400px;
+        margin-top:70px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about {
+        margin-top: 40px
+    }
+}
+
+@media (max-width: 767px) {
+    .about {
+        text-align: center
+    }
+}
+
+.about p:first-of-type {
+    color: #785dca;
+    font-weight: normal;
+    font-size: 34px
+}
+
+@media (max-width: 767px) {
+    .about p:first-of-type {
+        font-size: 24px
+    }
+}
+
+.about p:last-of-type {
+    font-weight: normal;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.25
+}
+
+@media (min-width: 992px) {
+    .about p:last-of-type {
+        padding-right: 100px
+    }
+}
+
+@media (max-width: 767px) {
+    .about p:last-of-type {
+        font-size: 14px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .about p:last-of-type {
+        font-size: 18px
+    }
+}
+
+@media (min-width: 768px) {
+    .abt-pic {
+        margin-top: 40px
+    }
+}
+
+.bg-purp {
+    background-color: #785dca
+}
+
+.program-section {
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.42);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.42);
+    position: relative;
+    top: -20px
+}
+
+.program-section .pgm-head {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: normal;
+    color: #666666;
+    text-align: center;
+    line-height: 1.2;
+    position: relative
+}
+
+.program-section .pgm-head:after {
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid ;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    width: 50px;
+    margin: 0 auto;
+    border-radius: 4px
+}
+
+@media (min-width: 768px) {
+    .program-section {
+        margin: 0 40px
+    }
+}
+
+.program-section ul {
+    border-bottom: none;
+    background-color: #000
+}
+
+.program-section ul li.active a, .program-section ul li.active a:hover, .program-section ul li.active a:focus {
+    font-family: 'proxima';
+    font-weight: normal;
+    background-color: #785dca;
+    border: none;
+    border-radius: 0;
+    color: #ffffff;
+    text-transform: uppercase
+}
+
+.program-section ul li {
+    margin-bottom: 0
+}
+
+.program-section ul li a {
+    transition: all .3s ease;
+    font-size: 18px;
+    padding: 18px 65px;
+    margin-right: 0;
+    font-family: 'proxima';
+    font-weight: normal;
+    border: none;
+    border-radius: 0;
+    color: #ffffff;
+    text-transform: uppercase
+}
+
+.program-section ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+@media (max-width: 767px) {
+    .program-section ul li a {
+        padding: 18px 33px
+    }
+}
+
+.program-section .tab-content {
+    background-color: #ffffff;
+    min-height: 400px
+}
+
+.owl-carousel.owl-theme .owl-item {
+    padding: 15px
+}
+
+.owl-carousel.owl-theme .owl-prev, .owl-carousel.owl-theme .owl-next {
+    position: absolute;
+    top: 40%;
+    background-color: transparent !important;
+    color: #414042 !important
+}
+
+.owl-carousel.owl-theme .owl-prev {
+    left: -5%
+}
+
+.owl-carousel.owl-theme .owl-prev:hover {
+    color: #785dca !important
+}
+
+.owl-carousel.owl-theme .owl-next {
+    right: -5%
+}
+
+.owl-carousel.owl-theme .owl-next:hover {
+    color: #785dca !important
+}
+
+.owl-carousel.owl-theme .item a:hover {
+    text-decoration: none
+}
+
+.owl-speakers .owl-nav.disabled{
+    display: block;
+}
+
+
+.card-wrap {
+    overflow: hidden;
+    min-height: 230px;
+    position: relative;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 20px 0 #f1f1f2;
+    -moz-box-shadow: 0 0 20px 0 #f1f1f2;
+    box-shadow: 0 0 20px 0 #f1f1f2
+}
+
+.card-wrap img {
+    border-radius: 6px 6px 0 0;
+    width: 100%
+}
+
+.card-wrap:hover .card-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    bottom: 0
+}
+
+.card-wrap:hover .card-content p:last-of-type {
+    overflow: visible;
+    -webkit-box-orient: horizontal
+}
+
+.card-wrap:hover .card-content .btn.btn-default {
+    bottom: 15px
+}
+
+.card-wrap .card-content {
+    transition: all .3s ease;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 66%;
+    bottom: 0;
+    background-color: #000;
+    padding: 15px 10px;
+    border-radius: 0 0 6px 6px;
+    padding: 10px
+}
+
+.card-wrap .card-content p {
+    margin-bottom: 2px;
+    line-height: 1.25;
+    font-family: 'proxima'
+}
+
+.card-wrap .card-content p:first-of-type {
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff
+}
+
+.card-wrap .card-content p:last-of-type {
+    color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+    -webkit-box-orient: vertical
+}
+
+.card-wrap .card-content .btn.btn-default {
+    position: absolute;
+    bottom: 0;
+    border-color: #2ebc67;
+    font-family: 'proxima';
+    color: #2ebc67;
+    border-radius: 24px;
+    font-size: 12px;
+    bottom: -50%;
+    background-color: transparent
+}
+
+.card-wrap .card-content .btn.btn-default:hover {
+    background-color: #2ebc67;
+    color: #ffffff
+}
+
+.card-wrap-2 {
+    position: relative;
+    overflow: hidden
+}
+
+.card-wrap-2 img {
+    width: 100%
+}
+
+.card-wrap-2 .card-content-2 {
+    transition: all .3s ease;
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-color: #000
+}
+
+.card-wrap-2 .card-content-2 p {
+    margin-bottom: 0;
+    color: #ffffff
+}
+
+.card-wrap-2 .card-content-2 p:first-of-type {
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'proxima'
+}
+
+.card-wrap-2 .card-content-2 p:last-of-type {
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.card-wrap-2 .desc {
+    background-color: #000;
+    transition: all .3s ease;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 10px;
+    padding-top: 35%;
+    opacity: 0;
+    font-family: 'proxima'
+}
+
+.card-wrap-2:hover .desc {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    bottom: 0;
+    background-color: #000
+}
+
+.card-wrap-2:hover .card-content-2 {
+    visibility: hidden;
+    opacity: 0
+}
+
+.gal-head {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: normal;
+    color: #414042;
+    text-align: center;
+    position: relative
+}
+
+.gal-head:after {
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid #785dca;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    width: 50px;
+    margin: 0 auto;
+    border-radius: 4px
+}
+
+a.dec-none:hover {
+    color: #785dca
+}
+
+.big-head {
+    padding: 20px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 20px 0 #ccc !important;
+    -moz-box-shadow: 0 0 20px 0 #ccc !important;
+    box-shadow: 0 0 20px 0 #ccc !important;
+    font-size: 24px;
+    color: #414042;
+    font-weight: normal
+}
+
+.big-head span {
+    position: relative;
+    font-weight: 300;
+    margin-left: 20px;
+    font-size: 16px
+}
+
+.big-head span:after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    left: -12px;
+    border-radius: 60px;
+    position: absolute;
+    top: 40%;
+    background-color: rgba(65, 64, 66, 0.5)
+}
+
+.bg-img {
+    background-image: url('../img/bg.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #ffffff
+}
+
+.bg-img .overlay {
+    background-color: rgba(120, 93, 202, 0.5);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0
+}
+
+.bg-img .date-wrap {
+    position: absolute;
+    top: 40%;
+    width: 100%
+}
+
+.bg-img .date-wrap .date-item p:first-of-type {
+    font-size: 4.236em;
+    margin-bottom: 0
+}
+
+@media (max-width: 768px) {
+    .bg-img .date-wrap .date-item p:first-of-type {
+        font-size: 2.618em
+    }
+}
+
+.bg-img .date-wrap .date-item p:last-of-type {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+@media (max-width: 768px) {
+    .bg-img .date-wrap .date-item p:last-of-type {
+        font-size: .618em
+    }
+}
+
+.bg-img .heading {
+    margin-bottom: 30px
+}
+
+.bg-img .heading span {
+    font-size: 4.236em;
+    position: relative
+}
+
+.bg-img .heading span:after {
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid #ffffff;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    width: 50px;
+    margin: 0 auto;
+    border-radius: 4px
+}
+
+.logo-wrap img {
+    margin: 0 auto;
+    position: relative;
+    top: 100px
+}
